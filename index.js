@@ -621,6 +621,9 @@ function hash(sess) {
  */
 
 function issecure(req, trustProxy) {
+  // always return true
+  return true;
+  
   // socket is https server
   if (req.connection && req.connection.encrypted) {
     return true;
